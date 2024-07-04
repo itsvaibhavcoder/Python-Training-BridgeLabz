@@ -105,11 +105,7 @@ Operators are special symbols that perform operations on variables and values. T
 - `is` (Identity operator)
 - `is not` (Negated identity operator)
 
-## 1. Python Variables
-
-A variable is simply a name given to a memory location that holds the value assigned to the variable.
-
-## 2. Python Variable Scope
+## 4. Python Variable Scope
 
 In Python, we can declare variables in three different scopes:
 
@@ -119,11 +115,11 @@ In Python, we can declare variables in three different scopes:
 
 # Python Coding Concepts
 
-## 1. Modularization
+## 5. Modularization
 
 Modularization can be achieved using various constructs such as function blocks, classes, modules, and packages. This helps in organizing code into reusable and manageable sections.
 
-## 2. Python Blocks
+## 6. Python Blocks
 
 Python uses indentation to define a block of code. This block of code could be:
 
