@@ -1,4 +1,4 @@
-# Python Programming Notes
+# Python Programming Notes - Day 1
 
 ## 1. Hello World Program
 The initial program to write is always the 'Hello World.' A successful execution of this program, displaying 'Hello World' in the standard output, ensures that all the required environmental settings are in place.
@@ -296,3 +296,114 @@ Functions are defined using the `def` keyword.
 `Indentation` is used to define the body of the function.
 Functions can have `parameters` to pass data.
 Functions can return values using the `return` statement.
+
+## Hard Coding
+Hard coding refers to the practice of embedding fixed data directly into the source code. It should generally be avoided as it makes the code less flexible for future changes. However, it can be acceptable for values that are constants and will never change, such as the value of PI.
+
+### Example
+```python
+# Hardcoded value of PI
+PI = 3.14159265359
+
+# Example of using PI
+radius = 5
+area = PI * (radius ** 2)
+print(f"Area of the circle is: {area}")
+```
+
+## Python Built-In input() Function
+The input() function is a Python built-in function designed to receive user input from the standard input (typically the keyboard). It returns the input as a string.
+
+Example:
+```python
+# Using input() to receive user input
+name = input("Enter your name: ")
+print(f"Hello, {name}!")
+```
+
+## Standard Input (stdin)
+Standard input (stdin) is a commonly used term in programming, denoting the default input device that a program utilizes to retrieve data. Typically, this is the keyboard, but it can also be a file or another input device.
+
+Example:
+```python
+
+# Receiving input from the standard input (keyboard)
+age = input("Enter your age: ")
+print(f"You are {age} years old.")
+```
+##  Type Casting
+Type casting is the method to convert a Python variable's datatype into a certain data type to perform the required operation. There are two types of type casting in Python:
+
+`Implicit Type Casting:` Automatically performed by the Python interpreter.
+`Explicit Type Casting:` Performed manually by the programmer.
+
+Examples:
+`Implicit Type` Casting:
+```python
+# Python automatically converts int to float
+num_int = 10
+num_float = 10.5
+
+result = num_int + num_float
+print(f"Result is {result} and type is {type(result)}")
+```
+
+`Explicit Type` Casting:
+```python
+# Manually converting one data type to another
+num_str = "100"
+num_int = int(num_str)
+
+print(f"num_int is {num_int} and type is {type(num_int)}")
+
+# Converting float to int
+num_float = 10.5
+num_int = int(num_float)
+
+print(f"num_int is {num_int} and type is {type(num_int)}")
+```
+## Python Error Handling
+When an error or exception occurs mainly at runtime, Python will normally stop and generate an error message. Handling such errors or exceptions during program execution is called Error Handling.
+
+### Example:
+```python
+# Example of error handling
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero!")'
+```
+
+## Python Runtime Errors
+Errors that occur at runtime (after passing the syntax test) are called exceptions or runtime errors. Python creates an exception object for well-defined errors like ValueError, NameError, etc. It's important to handle both specific errors and generic errors.
+
+Example:
+```python
+# Example of handling specific and generic errors
+try:
+    value = int("abc")
+except ValueError:
+    print("ValueError: Cannot convert string to integer")
+except Exception as e:
+    print(f"An error occurred: {e}")
+```
+## Python `try:` and `except:` Block
+Python executes code in the `try`: block as a “normal” part of the program. In case of any error, the code in the `except`: block is executed.
+
+Example:
+```python
+# Example of try and except block
+try:
+    numbers = [1, 2, 3]
+    print(numbers[5])
+except IndexError:
+    print("IndexError: List index out of range")
+
+# Example with multiple exceptions
+try:
+    result = 10 / int(input("Enter a number: "))
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+except ValueError:
+    print("Invalid input! Please enter a valid number.")
+```
