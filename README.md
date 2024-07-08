@@ -453,3 +453,77 @@ Example:
 ```python
 help(input)
 ```
+## Python Data Types
+Data types define the kind of data that can be stored in memory for a variable. In Python, data types are implicitly assigned. All built-in data types belong to Python classes. They can be categorized as either:
+
+### Primitive Data Types
+- **int**: Integer values
+- **float**: Floating-point values
+- **str**: String values
+- **bool**: Boolean values (True or False)
+
+### Derived Data Types
+- **list**: Ordered, mutable collection of items
+- **dict**: Unordered, mutable collection of key-value pairs
+- **set**: Unordered, mutable collection of unique items
+- **tuple**: Ordered, immutable collection of items
+
+## Python Explicit Type Conversion
+Type conversion is converting from one data type to another. Explicit type conversion is achieved through Python's built-in functions such as `int()`, `float()`, and `str()`.
+
+### Example:
+```python
+num_str = "123"
+num_int = int(num_str)  # Converts string to integer
+num_float = float(num_str)  # Converts string to float
+num_str_again = str(num_int)  # Converts integer back to string
+```
+
+## Python Constant
+Constants are types of variables whose values cannot be altered or changed after initialization. These values are universally proven to be true and they cannot be changed over time.
+
+Example:
+```python
+PI = 22 / 7
+```
+Naming Convention to define constants is all caps.
+Python constants are declared and initialized at the beginning of the program as global variables or preferably in different modules/files.
+
+## Python Multiplication and Power Operator
+Multiplication Operator (*): Used to multiply two values.
+Power Operator ()**: Used to raise a number to the power of another number.
+Example:
+```python
+result_mult = 5 * 3  # Multiplication
+result_pow = 2 ** 3  # Power (2 raised to the power of 3)
+```
+
+## Python Operator Precedence
+In Python, the order of operations follows the same principles as PEMDAS.
+
+`PEMDAS` is an acronym that stands for:
+
+P: Parentheses
+E: Exponents
+M: Multiplication
+D: Division
+A: Addition
+S: Subtraction
+Expressions inside parentheses are evaluated first, followed by exponents, then multiplication and division (from left to right), and finally addition and subtraction (from left to right).
+
+Example:
+```python
+result = (2 + 3) * 2 ** 2 / 2 - 5  # Evaluates to 5.0
+```
+
+## Python Format Specifier for Floating-Point Numbers
+For formatting float variables as strings with a format specifier expression like {number:.2f}:
+: separates the number from the format specifier .2f.
+.2 specifies the number of digits to be displayed after the decimal point.
+f indicates that the value should be formatted as a floating-point number.
+Example:
+
+```python
+number = 3.14159
+formatted_number = f"{number:.2f}"  # Formats to '3.14'
+```
