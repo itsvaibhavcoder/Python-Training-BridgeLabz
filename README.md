@@ -407,3 +407,49 @@ except ZeroDivisionError:
 except ValueError:
     print("Invalid input! Please enter a valid number.")
 ```
+
+# Python Programming Notes - Day 2
+
+## Standard Input (stdin)
+Standard input is a commonly used term in programming, denoting the default input device that a program utilizes to retrieve data. Typically, this is the keyboard, but it can also be a file or another input device.
+
+## Python Built-In input() Function
+The `input()` function is a Python built-in function designed to receive user input from the standard input. When the user types and presses the return key, the input provided by the user is captured.
+
+### Example:
+```python
+user_input = input("Enter something: ")
+print(f"You entered: {user_input}")
+```
+
+## Formatted String Literal (f-string)
+An f-string looks very much like a typical Python string except that it’s prepended by the character f'' or F''. The magic of f-strings is that you can embed Python expressions directly inside them by using curly braces {}. The expression is evaluated and converted to string representation, and the result is interpolated into the original string in that location.
+
+Example:
+```python
+name = "Alice"
+age = 30
+print(f"Name: {name}, Age: {age}")
+```
+## Outcome of Executing help(print)
+help is a Python built-in function to get more helpful information about Python built-in functions. The execution of help(print) results in the following:
+```python
+print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
+```
+
+value: Can print multiple values to a stream or by default to the standard output (the terminal or screen).
+sep: The separator, by default an empty text ' '.
+end: Ends by default with a new line indicated by '\n'.
+
+Example:
+```python
+print("Hello", "World", sep='-', end='!')
+# Output: Hello-World!
+```
+## help(input)
+The help(input) function provides details about the input function. In the context of certain environments like Google Colab, it may use raw_input(prompt='') method of google.colab._kernel.Kernel instance, overriding the standard Python library input implementation.
+
+Example:
+```python
+help(input)
+```
