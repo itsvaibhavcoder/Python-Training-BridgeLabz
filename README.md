@@ -633,3 +633,19 @@ Example:
 gender = 'male'
 pronoun = 'his' if gender == 'male' else 'her'
 ```
+
+## Floor Division Operator (//)
+Floor Division Operation is a division operation that rounds the result down to the nearest whole number or integer, which is less than or equal to the normal division result. Essentially the Quotient.
+
+Example:
+```python
+floor_div_result = 10 // 3  # Result is 3
+```
+
+## Python Modulo Operation
+Python modulo operation is used to get the remainder of a division.
+
+Example:
+```python
+mod_result = 5 % 2  # Result is 1
+```
