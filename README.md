@@ -527,3 +527,109 @@ Example:
 number = 3.14159
 formatted_number = f"{number:.2f}"  # Formats to '3.14'
 ```
+##  Python Operators
+Operators are special symbols that perform operations on variables and values. They include:
+
+### Arithmetic Operators
+- **Addition (+)**: Adds two values.
+- **Subtraction (-)**: Subtracts one value from another.
+- **Multiplication (*)**: Multiplies two values.
+- **Division (/)**: Divides one value by another.
+- **Modulus (%)**: Returns the remainder of the division.
+- **Power (**)**: Raises a number to the power of another number.
+
+### Example:
+```python
+sum_result = 5 + 3  # Addition
+diff_result = 5 - 3  # Subtraction
+prod_result = 5 * 3  # Multiplication
+quot_result = 5 / 3  # Division
+mod_result = 5 % 3  # Modulus
+pow_result = 2 ** 3  # Power
+```
+
+## Assignment Operators
+Assignment (=): Used to assign a value to a variable.
+Example:
+```python
+
+x = 10
+y = 5
+```
+## Comparison Operators
+Equal (==): Checks if two values are equal.
+Not Equal (!=): Checks if two values are not equal.
+Greater Than (>): Checks if one value is greater than another.
+Less Than (<): Checks if one value is less than another.
+Greater Than or Equal To (>=): Checks if one value is greater than or equal to another.
+Less Than or Equal To (<=): Checks if one value is less than or equal to another.
+
+Example:
+```python
+a = 10
+b = 5
+result = a == b  # False
+result = a != b  # True
+result = a > b  # True
+result = a < b  # False
+result = a >= b  # True
+result = a <= b  # False
+```
+
+## Logical Operators
+and: Returns True if both statements are true.
+or: Returns True if one of the statements is true.
+not: Reverses the result, returns False if the result is true.
+Example:
+```python
+a = True
+b = False
+result = a and b  # False
+result = a or b  # True
+result = not a  # False
+```
+
+## Bitwise Operators
+AND (&): Sets each bit to 1 if both bits are 1.
+OR (|): Sets each bit to 1 if one of two bits is 1.
+
+Example:
+```python
+a = 5  # 0101 in binary
+b = 3  # 0011 in binary
+result = a & b  # 0001 (1 in decimal)
+result = a | b  # 0111 (7 in decimal)
+```
+
+## Special Operators
+is: Returns True if both variables are the same object.
+is not: Returns True if both variables are not the same object.
+Example:
+```python
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
+
+result = x is z  # True
+result = x is y  # False
+result = x == y  # True
+result = x is not y  # True
+```
+
+## Conditional Operation
+The conditional operation allows testing a condition in a single line, replacing the multiline if-else structure and making the code compact. It predominantly uses Comparison Operators and Logical Operators.
+
+Example:
+```python
+a = 10
+b = 20
+max_value = a if a > b else b  # max_value will be 20
+```
+## Python Shorthand If Else
+If you have only one condition to execute, one for if, and one for else, you can put it all on the same line using Python shorthand.
+
+Example:
+```python
+gender = 'male'
+pronoun = 'his' if gender == 'male' else 'her'
+```
