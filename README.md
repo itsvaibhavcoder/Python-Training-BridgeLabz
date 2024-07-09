@@ -437,9 +437,9 @@ help is a Python built-in function to get more helpful information about Python 
 print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
 ```
 
-value: Can print multiple values to a stream or by default to the standard output (the terminal or screen).
-sep: The separator, by default an empty text ' '.
-end: Ends by default with a new line indicated by '\n'.
+`value:` Can print multiple values to a stream or by default to the standard output (the terminal or screen).
+`sep:` The separator, by default an empty text ' '.
+`end:` Ends by default with a new line indicated by '\n'.
 
 Example:
 ```python
